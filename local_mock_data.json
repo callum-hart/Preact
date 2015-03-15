@@ -1,0 +1,54 @@
+{
+	"details": {
+		"name": "Company name",
+		"industry": "Plumbing and Heating",
+		"address": {
+			"building": "123 Made up building",
+			"street": "Fantasy Avenue",
+			"town": "Narnia",
+			"postcode": "NA7 N14"
+		}
+	},
+	"contact": {
+		"person": {
+			"first_name": "John",
+			"last_name": "Doe",
+			"picture": "images/jsa.jpg"
+		},
+		"landline": "0123456789",
+		"mobile": "9876543210",
+		"email": "john@doe.demo"
+	},
+	"staff": [
+		{
+			"first_name": "Jonny",
+			"last_name": "Edwards",
+			"picture": "images/jasonlong.jpg"
+		},
+		{
+			"first_name": "Sam",
+			"last_name": "Smith",
+			"picture": "images/myusuf3.jpg"
+		},
+		{
+			"first_name": "Sarah",
+			"last_name": "Martin",
+			"picture": "images/allisongrayce.jpg"
+		},
+		{
+			"first_name": "Paul",
+			"last_name": "Daniels",
+			"picture": "images/kolage.jpg"
+		},
+		{
+			"first_name": "Warren",
+			"last_name": "Southcott",
+			"picture": "images/flashmurphy.jpg"
+		},
+		{
+			"first_name": "James",
+			"last_name": "Lucky",
+			"picture": "images/commadelimited.jpg"
+		}
+	]
+}

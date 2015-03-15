@@ -1,0 +1,67 @@
+.waiting-on-data {
+	// <h1> interface preview
+
+	h1.with-preview {
+		height: 22px;
+		width: 250px;
+		background: #B8B7B7;
+	}
+
+	// <p> interface preview
+
+	p.with-preview {
+		height: 10px;
+		width: 200px;
+		background: #CCC;
+	}
+
+	// Elements with click events (such as buttons / href's)
+	// 	- hidden using opacity to prevent breaking layout.
+	//  - click events are ignored using pointer events.
+
+	.hidden-in-preview {
+		opacity: 0.2;
+		pointer-events: none;
+	}
+}
+
+// <img> interface preview
+
+.preact-image-mask {
+	position: relative;
+	overflow: hidden;
+	background: #ccc;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.img-placeholder {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	&:before, &:after {
+		content: ' ';
+		display: block;
+		margin: 0 auto;
+		background: #989696;
+	}
+
+	// persons head
+	&:before {
+		width: 40%;
+		height: 45%;
+		margin-top: 24%;
+		border-radius: 100%;
+	}
+
+	// persons body
+	&:after {
+		width: 66%;
+		height: 100%;
+		margin-top: -2px;
+		border-radius: 16px 16px 0 0;
+	}
+}
