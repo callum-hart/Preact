@@ -85,7 +85,6 @@
             <div className='block'>
               <span className='block-left'>
                 <strong>Contact</strong>
-                <input type="text" className="hidden-in-preview" />
               </span>
               <span className='block-right'>
                 <Image src={profile_pic} width="73px" height="73px" />
