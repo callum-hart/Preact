@@ -63,7 +63,7 @@
         <div className={mutatable_class}>
           <div className='title'>
             <h2>Company Details</h2>
-            <button type="button" className="hidden-in-preview" onClick={this.submit}>Save</button>
+            <button type="button" className="disabled-in-preview" onClick={this.submit}>Save</button>
           </div>
           <div className="component-inner">
             <div className='block'>
