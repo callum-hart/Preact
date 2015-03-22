@@ -19,12 +19,15 @@ a {
   text-decoration: none;
 }
 body {
-  padding: 20px;
   background: #e8dfe7;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 .component {
-  float: left;
+  display: inline-block;
+  max-width: 600px;
+  margin: 100px 0 0 0;
+  text-align: left;
   border-radius: 4px;
   border: 5px solid rgba(0, 0, 0, 0.06);
 }
@@ -58,6 +61,16 @@ body {
   background: #ffffff;
   padding: 20px 0;
 }
+.component .component-inner hr {
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid rgba(219, 208, 216, 0.3);
+}
+.component.waiting-on-data p.with-preview {
+  margin: 6px 0 0 0;
+}
 .block {
   float: left;
   width: 100%;
@@ -83,7 +96,33 @@ body {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }
-.block img {
+.block h1 {
   float: left;
+  margin: 24px 0 0 20px;
+  line-height: 18px;
+}
+.block ul {
+  float: left;
+  width: 100%;
+}
+.block ul li {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin: 0 0 14px 0;
+}
+.block ul li .preact-image-mask {
+  margin: 0 14px 0 0;
+}
+.block ul li:last-of-type {
+  margin: 0;
+}
+.block ul span {
+  float: left;
+  margin: 8px 0 0 0;
+}
+.block .preact-image-mask {
+  float: left;
+  clear: both;
   border-radius: 3px;
 }

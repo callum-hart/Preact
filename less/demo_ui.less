@@ -3,13 +3,16 @@
 @import "resets.less";
 
 body {
-	padding: 20px;
 	background: @content-bg;
 	font-family: @sans-serif;
+	text-align: center;
 }
 
 .component {
-	float: left;
+	display: inline-block;
+	max-width: 600px;
+	margin: 100px 0 0 0;
+	text-align: left;
 	.border-radius(4px);
 	border: 5px solid rgba(0, 0, 0, 0.06);
 	.title {
@@ -39,6 +42,18 @@ body {
 		.full-width();
 		background: @component-bg;
 		padding: 20px 0;
+		hr {
+			.full-width();
+			margin: 20px 0;
+			border: none;
+			border-top: 1px solid rgba(219,208,216,.3);
+		}
+	}
+
+	&.waiting-on-data {
+		p.with-preview {
+			margin: 6px 0 0 0;
+		}
 	}
 }
 
@@ -55,22 +70,43 @@ body {
 		width: 70%;
 		.box-sizing(border-box);
 		padding: 0 0 0 30px;
-
 		font-family: @serif;
 		font-size: 17px;
 		color: rgba(0,0,0,0.6);
 	}
-
 	strong {
 		font-size: 13px;
 		color: rgba(0,0,0,0.6);
 		text-transform: uppercase;
 		-webkit-font-smoothing: antialiased;
 	}
-
-	img {
+	h1 {
 		float: left;
+		margin: 24px 0 0 20px;
+		line-height: 18px;
+	}
+	ul {
+		.full-width();
+		li {
+			.full-width();
+			clear: both;
+			margin: 0 0 14px 0;
+			.preact-image-mask {
+				margin: 0 14px 0 0;
+			}
+			&:last-of-type {
+				margin: 0;
+			}
+		}
+		span {
+			float: left;
+			margin: 8px 0 0 0;
+		}
+	}
 
-		.border-radius(3px);// temp
+	.preact-image-mask {
+		float: left;
+		clear: both;
+		.border-radius(3px);
 	}
 }

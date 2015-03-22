@@ -1,12 +1,12 @@
 .waiting-on-data h1.with-preview {
   height: 22px;
   width: 250px;
-  background: #B8B7B7;
+  background: #e0e0e0;
 }
 .waiting-on-data p.with-preview {
   height: 10px;
-  width: 200px;
-  background: #CCC;
+  width: 150px;
+  background: rgba(224, 224, 224, 0.6);
 }
 .waiting-on-data .disabled-in-preview {
   opacity: 0.2;
@@ -15,7 +15,7 @@
 .preact-image-mask {
   position: relative;
   overflow: hidden;
-  background: #ccc;
+  background: #e0e0e0;
 }
 .preact-image-mask img {
   width: 100%;
@@ -32,7 +32,7 @@
   content: ' ';
   display: block;
   margin: 0 auto;
-  background: #989696;
+  background: #b2b1b1;
 }
 .img-placeholder:before {
   width: 40%;

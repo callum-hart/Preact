@@ -21,7 +21,7 @@
 	},
 	"staff": [
 		{
-			"first_name": "Jonny",
+			"first_name": "Warren",
 			"last_name": "Edwards",
 			"picture": "images/jasonlong.jpg"
 		},
@@ -34,21 +34,6 @@
 			"first_name": "Sarah",
 			"last_name": "Martin",
 			"picture": "images/allisongrayce.jpg"
-		},
-		{
-			"first_name": "Paul",
-			"last_name": "Daniels",
-			"picture": "images/kolage.jpg"
-		},
-		{
-			"first_name": "Warren",
-			"last_name": "Southcott",
-			"picture": "images/flashmurphy.jpg"
-		},
-		{
-			"first_name": "James",
-			"last_name": "Lucky",
-			"picture": "images/commadelimited.jpg"
 		}
 	]
 }

@@ -49,13 +49,15 @@
         'component':                 this.props.data_arrived
       });
 
-      var name, industry, full_name, profile_pic, staff_members = [];
+      var name, industry, full_name, profile_pic, email, phone, staff_members = [];
 
       if(this.props.data_arrived) {
         name          = this.props.data.details.name;
         industry      = this.props.data.details.industry;
         full_name     = this.props.data.contact.person.first_name + ' ' + this.props.data.contact.person.last_name;
         profile_pic   = this.props.data.contact.person.picture;
+        email         = this.props.data.contact.email;
+        phone         = this.props.data.contact.landline;
         staff_members = this.props.data.staff;
       }
 
@@ -63,7 +65,7 @@
         <div className={mutatable_class}>
           <div className='title'>
             <h2>Company Details</h2>
-            <button type="button" className="disabled-in-preview" onClick={this.submit}>Save</button>
+            <button type="button" className="disabled-in-preview" onClick={this.editUser}>Edit</button>
           </div>
           <div className="component-inner">
             <div className='block'>
@@ -79,12 +81,12 @@
                 <strong>Industry</strong>
               </span>
               <span className='block-right'>
-                <span>{industry}</span>
+                <p className='with-preview'>{industry}</p>
               </span>
             </div>
             <div className='block'>
               <span className='block-left'>
-                <strong>Contact</strong>
+                <strong>Owner</strong>
               </span>
               <span className='block-right'>
                 <Image src={profile_pic} width="73px" height="73px" />
@@ -93,16 +95,32 @@
             </div>
             <div className='block'>
               <span className='block-left'>
-                <strong>Staff</strong>
+                <strong>Email</strong>
+              </span>
+              <span className='block-right'>
+                <p className='with-preview'>{email}</p>
+              </span>
+            </div>
+            <div className='block'>
+              <span className='block-left'>
+                <strong>Phone</strong>
+              </span>
+              <span className='block-right'>
+                <p className='with-preview'>{phone}</p>
+              </span>
+            </div>
+            <hr />
+            <div className='block'>
+              <span className='block-left'>
+                <strong>Directors</strong>
               </span>
               <span className='block-right'>
                 <ul>
                   {staff_members.map(function(member) {
                     return (
                       <li>
-                        <Image src={member.picture} width="73px" height="73px" />
-                        <span>{member.first_name}</span>
-                        <span>{member.last_name}</span>
+                        <Image src={member.picture} width="40px" height="40px" />
+                        <p>{member.first_name}&nbsp;{member.last_name}</p>
                       </li>
                     )
                   })}
@@ -114,7 +132,7 @@
       )
     },
 
-    submit: function() {
+    editUser: function() {
       console.log('Click events only registered once data has arrived');
     }
   });
