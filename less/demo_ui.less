@@ -8,13 +8,51 @@ body {
 	text-align: center;
 }
 
+nav {
+	display: inline-block;
+	width: 700px;
+	margin: 0 auto;
+	padding: 40px 0 20px 0;
+	border-bottom: 1px solid @thick-border-color;
+	h1 {
+		float: left;
+		font-size: 22px;
+  	color: darken(@text-color, 10%);
+	}
+	a {
+		float: right;
+	  img {
+	  	float: left;
+	  	margin: 0 10px 0 0;
+	  }
+	  span {
+	  	float: left;
+	  	margin: 8px 0 0 0;
+	  }
+	}
+}
+
+footer {
+	.full-width();
+	padding: 40px 0;
+}
+
+a {
+	font-size: 14px;
+	color: @link-color;
+}
+
+#demo-component {
+	clear: both;
+}
+
 .component {
 	display: inline-block;
-	max-width: 600px;
-	margin: 100px 0 0 0;
+	width: 600px;
+	margin: 50px 0 0 0;
 	text-align: left;
 	.border-radius(4px);
-	border: 5px solid rgba(0, 0, 0, 0.06);
+	border: 5px solid @thick-border-color;
 	.title {
 		.full-width();
 		background: @component-title-bg;
@@ -31,11 +69,11 @@ body {
 			padding: 5px 16px;
 			font-size: 14px;
 			font-weight: 700;
-			text-transform: lowercase;
 			border: none;
 			.border-radius(2px);
 			background: @button-bg;
-			color: rgba(0,0,0,.55);
+			color: @button-color;
+			cursor: pointer;
 		}
 	}
 	.component-inner {
@@ -46,7 +84,7 @@ body {
 			.full-width();
 			margin: 20px 0;
 			border: none;
-			border-top: 1px solid rgba(219,208,216,.3);
+			border-top: 1px solid @hr-color;
 		}
 	}
 
@@ -72,11 +110,11 @@ body {
 		padding: 0 0 0 30px;
 		font-family: @serif;
 		font-size: 17px;
-		color: rgba(0,0,0,0.6);
+		color: @text-color;
 	}
 	strong {
 		font-size: 13px;
-		color: rgba(0,0,0,0.6);
+		color: @text-color;
 		text-transform: uppercase;
 		-webkit-font-smoothing: antialiased;
 	}

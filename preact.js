@@ -163,6 +163,6 @@
 
   React.render(
     <Container />,
-    document.getElementById('app')
+    document.getElementById('demo-component')
   );
 })();

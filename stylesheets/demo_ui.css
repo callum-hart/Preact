@@ -23,10 +23,45 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
+nav {
+  display: inline-block;
+  width: 700px;
+  margin: 0 auto;
+  padding: 40px 0 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+nav h1 {
+  float: left;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.6);
+}
+nav a {
+  float: right;
+}
+nav a img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+nav a span {
+  float: left;
+  margin: 8px 0 0 0;
+}
+footer {
+  float: left;
+  width: 100%;
+  padding: 40px 0;
+}
+a {
+  font-size: 14px;
+  color: #5781c3;
+}
+#demo-component {
+  clear: both;
+}
 .component {
   display: inline-block;
-  max-width: 600px;
-  margin: 100px 0 0 0;
+  width: 600px;
+  margin: 50px 0 0 0;
   text-align: left;
   border-radius: 4px;
   border: 5px solid rgba(0, 0, 0, 0.06);
@@ -49,11 +84,11 @@ body {
   padding: 5px 16px;
   font-size: 14px;
   font-weight: 700;
-  text-transform: lowercase;
   border: none;
   border-radius: 2px;
   background: #ecc683;
   color: rgba(0, 0, 0, 0.55);
+  cursor: pointer;
 }
 .component .component-inner {
   float: left;
