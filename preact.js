@@ -28,8 +28,7 @@
     },
 
     getRemoteData: function() {
-      var path = '/local_mock_data.json';
-      // var path = 'https://api.myjson.com/bins/10wgj';
+      var path = 'https://api.myjson.com/bins/4o6oz';
       return $.ajax({ url: path });
     },
 
@@ -49,16 +48,16 @@
         'component':                 this.props.data_arrived
       });
 
-      var name, industry, full_name, profile_pic, email, phone, staff_members = [];
+      var company_name, industry, full_name, profile_pic, email, phone, directors = [];
 
       if(this.props.data_arrived) {
-        name          = this.props.data.details.name;
-        industry      = this.props.data.details.industry;
-        full_name     = this.props.data.contact.person.first_name + ' ' + this.props.data.contact.person.last_name;
-        profile_pic   = this.props.data.contact.person.picture;
-        email         = this.props.data.contact.email;
-        phone         = this.props.data.contact.landline;
-        staff_members = this.props.data.staff;
+        company_name  = this.props.data.company.name;
+        industry      = this.props.data.company.industry;
+        full_name     = this.props.data.user.first_name + ' ' + this.props.data.user.last_name;
+        profile_pic   = this.props.data.user.profile_pic;
+        email         = this.props.data.user.email;
+        phone         = this.props.data.user.phone;
+        directors     = this.props.data.directors;
       }
 
       return (
@@ -73,7 +72,7 @@
                 <strong>Name</strong>
               </span>
               <span className='block-right'>
-                <p className='with-preview'>{name}</p>
+                <p className='with-preview'>{company_name}</p>
               </span>
             </div>
             <div className='block'>
@@ -116,10 +115,10 @@
               </span>
               <span className='block-right'>
                 <ul>
-                  {staff_members.map(function(member) {
+                  {directors.map(function(member) {
                     return (
                       <li>
-                        <Image src={member.picture} width="40px" height="40px" />
+                        <Image src={member.profile_pic} width="40px" height="40px" />
                         <p>{member.first_name}&nbsp;{member.last_name}</p>
                       </li>
                     )
