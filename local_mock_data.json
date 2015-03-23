@@ -11,8 +11,8 @@
 	},
 	"contact": {
 		"person": {
-			"first_name": "John",
-			"last_name": "Doe",
+			"first_name": "Oliver",
+			"last_name": "Chapman",
 			"picture": "images/jsa.jpg"
 		},
 		"landline": "0123456789",
@@ -21,7 +21,7 @@
 	},
 	"staff": [
 		{
-			"first_name": "Warren",
+			"first_name": "Mark",
 			"last_name": "Edwards",
 			"picture": "images/jasonlong.jpg"
 		},
@@ -31,7 +31,7 @@
 			"picture": "images/myusuf3.jpg"
 		},
 		{
-			"first_name": "Sarah",
+			"first_name": "Jenny",
 			"last_name": "Martin",
 			"picture": "images/allisongrayce.jpg"
 		}
