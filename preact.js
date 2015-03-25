@@ -42,7 +42,7 @@
 
     render: function() {
       return (
-        <DemoComponent data_arrived={this.state.data_arrived} data={this.state.data} mutatable_class={this.state.mutatable_class}/>
+        <DemoComponent data_arrived={this.state.data_arrived} data={this.state.data} />
       )
     }
   });
@@ -51,7 +51,7 @@
     mixins: [PureRenderMixin],
 
     render: function() {
-      var mutatable_class = classSet({
+      var conditional_class = classSet({
         'component waiting-on-data': !this.props.data_arrived,
         'component':                 this.props.data_arrived
       });
@@ -59,17 +59,17 @@
       var company_name, industry, full_name, profile_pic, email, phone, directors = [];
 
       if(this.props.data_arrived) {
-        company_name  = this.props.data.company.name;
-        industry      = this.props.data.company.industry;
-        full_name     = this.props.data.user.first_name + ' ' + this.props.data.user.last_name;
-        profile_pic   = this.props.data.user.profile_pic;
-        email         = this.props.data.user.email;
-        phone         = this.props.data.user.phone;
-        directors     = this.props.data.directors;
+        company_name = this.props.data.company.name;
+        industry     = this.props.data.company.industry;
+        full_name    = this.props.data.user.first_name + ' ' + this.props.data.user.last_name;
+        profile_pic  = this.props.data.user.profile_pic;
+        email        = this.props.data.user.email;
+        phone        = this.props.data.user.phone;
+        directors    = this.props.data.directors;
       }
 
       return (
-        <div className={mutatable_class}>
+        <div className={conditional_class}>
           <div className='title'>
             <h2>Company Details</h2>
             <button type='button' className='disabled-in-preview' onClick={this.editUser}>Edit</button>
