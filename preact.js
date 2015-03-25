@@ -15,6 +15,14 @@
     handleRemoteData: function() {
       var self = this;
 
+      /**
+       * getRemoteData() returns a promise which is resolved when
+       * data has arrived from the server. This demo uses jQuery
+       * for fetching data.
+       *
+       * (The timeout is only used to demo the interface preview)
+       */
+
       this.getRemoteData().then(function(res) {
         setTimeout(function() {
           self.setState({
