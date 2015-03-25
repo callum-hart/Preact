@@ -9,8 +9,8 @@ Design pattern & small CSS lib for interface previews using React
 
 ### Files
 
-- React component can be found preact.js
-- CSS can be found /stylesheets/preact.css
+- React component: preact.js
+- CSS styles: /stylesheets/preact.css
 
 ### To run
 
