@@ -29,7 +29,7 @@
             data_arrived: true,
             data: res
           });
-        }, 1000);
+        }, 600);
       },function(error) {
         console.warn(error.statusText);
       });
