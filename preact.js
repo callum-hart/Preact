@@ -42,12 +42,12 @@
 
     render: function() {
       return (
-        <Profile data_arrived={this.state.data_arrived} data={this.state.data} mutatable_class={this.state.mutatable_class}/>
+        <DemoComponent data_arrived={this.state.data_arrived} data={this.state.data} mutatable_class={this.state.mutatable_class}/>
       )
     }
   });
 
-  var Profile = React.createClass({
+  var DemoComponent = React.createClass({
     mixins: [PureRenderMixin],
 
     render: function() {
@@ -72,9 +72,9 @@
         <div className={mutatable_class}>
           <div className='title'>
             <h2>Company Details</h2>
-            <button type="button" className="disabled-in-preview" onClick={this.editUser}>Edit</button>
+            <button type='button' className='disabled-in-preview' onClick={this.editUser}>Edit</button>
           </div>
-          <div className="component-inner">
+          <div className='component-inner'>
             <div className='block'>
               <span className='block-left'>
                 <strong>Name</strong>
@@ -96,7 +96,7 @@
                 <strong>Owner</strong>
               </span>
               <span className='block-right'>
-                <Image src={profile_pic} width="73px" height="73px" />
+                <Image src={profile_pic} width='73px' height='73px' />
                 <h1 className='with-preview'>{full_name}</h1>
               </span>
             </div>
@@ -126,7 +126,7 @@
                   {directors.map(function(member) {
                     return (
                       <li>
-                        <Image src={member.profile_pic} width="40px" height="40px" />
+                        <Image src={member.profile_pic} width='40px' height='40px' />
                         <p>{member.first_name}&nbsp;{member.last_name}</p>
                       </li>
                     )
