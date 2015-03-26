@@ -36,7 +36,7 @@
     },
 
     getRemoteData: function() {
-      var path = 'https://api.myjson.com/bins/4o6oz';
+      var path = '/preact_example_data.json';
       return $.ajax({ url: path });
     },
 

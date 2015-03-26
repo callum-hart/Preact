@@ -1,0 +1,30 @@
+{
+	"company": {
+		"name": "Legless",
+		"industry": "Brewing"
+	},
+	"user": {
+		"first_name": "Oliver",
+		"last_name": "Chapman",
+		"profile_pic": "https://s3.amazonaws.com/uifaces/faces/twitter/jsa/73.jpg",
+		"phone": "0123456789",
+		"email": "oliver@demo.local"
+	},
+	"directors": [
+		{
+			"first_name": "Mark",
+			"last_name": "Edwards",
+			"profile_pic": "https://s3.amazonaws.com/uifaces/faces/twitter/jasonlong/73.jpg"
+		},
+		{
+			"first_name": "Sam",
+			"last_name": "Smith",
+			"profile_pic": "https://s3.amazonaws.com/uifaces/faces/twitter/myusuf3/73.jpg"
+		},
+		{
+			"first_name": "Jenny",
+			"last_name": "Martin",
+			"profile_pic": "https://s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/73.jpg"
+		}
+	]
+}
